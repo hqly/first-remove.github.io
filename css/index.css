@@ -1,0 +1,356 @@
+/* 导入 字体文件 */
+@font-face {
+  font-family: 'wjsfont';
+  src: url('../font/MiFie-Web-Font.eot');
+  src: url('../font/MiFie-Web-Font.eot?#iefix') format('embedded-opentype'), url('../font/MiFie-Web-Font.woff') format('woff'), url('font/MiFie-Web-Font.ttf') format('truetype'), url('../font/MiFie-Web-Font.svg') format('svg');
+}
+/* 定义 使用的class */
+.wjsfont {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'wjsfont';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+}
+.wjsfont-logo::before {
+  content: '\e920';
+}
+.wjsfont-name::before {
+  content: '\e921';
+}
+.wjsfont-e903::before {
+  content: '\e903';
+}
+.wjsfont-e901::before {
+  content: '\e901';
+}
+.wjsfont-e904::before {
+  content: '\e904';
+}
+.wjsfont-e905::before {
+  content: '\e905';
+}
+.wjsfont-e902::before {
+  content: '\e902';
+}
+/* 添加 产品列表的 文字样式 */
+.wjsfont-e915::before {
+  content: '\e915';
+}
+.wjsfont-new01::before {
+  content: "\e90e";
+}
+.wjsfont-new02::before {
+  content: "\e90f";
+}
+.wjsfont-new03::before {
+  content: "\e910";
+}
+.wjsfont-new04::before {
+  content: "\e911";
+}
+/* 网页 最下方的 合作单位 */
+.wjsfont-partner01::before {
+  content: "\e946";
+}
+.wjsfont-partner02::before {
+  content: "\e92f";
+}
+.wjsfont-partner03::before {
+  content: "\e92e";
+}
+.wjsfont-partner04::before {
+  content: "\e92a";
+}
+.wjsfont-partner05::before {
+  content: "\e929";
+}
+.wjsfont-partner06::before {
+  content: "\e931";
+}
+.wjsfont-partner07::before {
+  content: "\e92c";
+}
+.wjsfont-partner08::before {
+  content: "\e92b";
+}
+.wjsfont-partner09::before {
+  content: "\e92d";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.wjs_color {
+  color: #d9534f;
+}
+.wjs_header .container-fluid .row div {
+  text-align: center;
+  font-size: 14px;
+  height: 45px;
+  line-height: 45px;
+  border-bottom: 1px solid #000;
+  border-left: 1px solid #000;
+}
+.wjs_header .container-fluid .row div a {
+  color: #808080;
+  position: relative;
+}
+.wjs_header .container-fluid .row div a img {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  display: none;
+  z-index: 1;
+}
+.wjs_header .container-fluid .row div a:hover img {
+  display: block;
+}
+.wjs_nav .row .navbar-default {
+  margin-bottom: 0;
+}
+.wjs_nav .row .navbar-default .navbar-header {
+  padding: 10px;
+}
+.wjs_nav .row .navbar-default .navbar-header .navbar-brand {
+  padding: 0px 35px;
+  font-size: 60px;
+}
+.wjs_nav .row .navbar-default .navbar-header .navbar-brand span {
+  color: red;
+}
+.wjs_nav .row .navbar-default .navbar-header .navbar-brand .wjsfont-name {
+  color: #777777;
+}
+.wjs_nav .row .navbar-default .navbar-collapse {
+  padding-top: 15px;
+}
+.wjs_nav .row .navbar-default .navbar-collapse .navbar-nav {
+  height: 60px;
+  line-height: 60px;
+}
+.wjs_nav .row .navbar-default .collapse .navbar-nav > li a {
+  padding-bottom: 23px;
+}
+.wjs_nav .row .navbar-default .collapse .navbar-nav > li a:hover,
+.wjs_nav .row .navbar-default .collapse .navbar-nav > li a:focus {
+  border-bottom: 2px solid red;
+}
+.wjs_Photo .carousel .carousel-inner .item img {
+  width: 100%;
+}
+.wjs_mark .container-fluid .row .media .media-body {
+  padding: 30px 50px;
+}
+.wjs_mark .container-fluid .row .media .media-body > a {
+  margin-top: 30px;
+  display: block;
+  color: #808080;
+}
+.wjs_mark .container-fluid .row .media .media-body > a > span {
+  display: block;
+  height: 100%;
+  float: left;
+  font-size: 40px;
+}
+.wjs_mark .container-fluid .row .media .media-body > a:hover {
+  color: red;
+}
+.wjs_waiting {
+  margin-top: 0px;
+  padding: 30px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+}
+.wjs_waiting .container-fluid .row p a {
+  color: red;
+  border-bottom: 1px dashed red;
+}
+.wjs_waiting .container-fluid .row p span:nth-last-child(1) {
+  float: right;
+}
+.wjs_newpepor .container-fluid .row .tab-content {
+  padding: 20px;
+}
+.wjs_newpepor .container-fluid .row .tab-content .card {
+  padding: 20px;
+}
+.wjs_newpepor .container-fluid .row .tab-content .card .card_box {
+  border: 1px solid #ccc;
+  padding-right: 80px;
+  position: relative;
+  color: #808080;
+  background-color: #f7f7f7;
+}
+.wjs_newpepor .container-fluid .row .tab-content .card .card_box .card_left {
+  position: relative;
+  padding: 20px 10px;
+  border-right: 1px dashed #000;
+}
+.wjs_newpepor .container-fluid .row .tab-content .card .card_box .card_left span {
+  font-size: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: red;
+  color: #fff;
+}
+.wjs_newpepor .container-fluid .row .tab-content .card .card_box .card_left h4 {
+  text-align: center;
+}
+.wjs_newpepor .container-fluid .row .tab-content .card .card_box .card_left .card_content {
+  position: relative;
+  width: 100%;
+}
+.wjs_newpepor .container-fluid .row .tab-content .card .card_box .card_left .card_content .c_content_l {
+  width: 50%;
+}
+.wjs_newpepor .container-fluid .row .tab-content .card .card_box .card_left .card_content .c_content_r {
+  width: 50%;
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  text-align: right;
+}
+.wjs_newpepor .container-fluid .row .tab-content .card .card_box .card_right {
+  width: 80px;
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding-top: 60px;
+  height: 100%;
+}
+.wjs_newpepor .container-fluid .row .tab-content .card .card_box .card_right p {
+  text-align: center;
+}
+.wjs_newpepor .container-fluid .row .tab-content .card .card_box .card_right:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+.wjs_newpepor .container-fluid .row .tab-content .card .card_box .card_right:after {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+}
+.wjs_newpepor .container-fluid .row .tab-content .card:nth-child(2) .card_box,
+.wjs_newpepor .container-fluid .row .tab-content .card:nth-child(4) .card_box {
+  background-color: red;
+  color: #fff;
+}
+.wjs_newpepor .container-fluid .row .tab-content .card:nth-child(2) .card_box .card_left,
+.wjs_newpepor .container-fluid .row .tab-content .card:nth-child(4) .card_box .card_left {
+  border-right-color: #fff;
+}
+.wjs_newpepor .container-fluid .row .tab-content .card:nth-child(3) .card_box .card_right > p span {
+  border: 1px solid red;
+  color: red;
+}
+.wjs_newpepor .container-fluid .row .tab-content .card:nth-child(3) .card_box .card_right > p span:nth-child(2) {
+  border: 1px solid green;
+  color: green;
+}
+.wjs_allNews .wjs_allnew h4 {
+  font-size: 30px;
+  border-bottom: 1px solid #000;
+  position: relative;
+}
+.wjs_allNews .wjs_allnew h4::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.wjs_allNews .wjs_newsTitle {
+  position: relative;
+}
+.wjs_allNews .wjs_newsTitle .line {
+  height: 80%;
+  border: 1px dashed #000;
+  position: absolute;
+  right: 57%;
+  top: 30px;
+}
+.wjs_allNews .wjs_newsTitle ul {
+  width: 100%;
+}
+.wjs_allNews .wjs_newsTitle ul li {
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.wjs_allNews .wjs_newsTitle ul li a {
+  margin: 0 auto;
+  display: block;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  color: #fff ;
+  background-color: #808080;
+}
+.wjs_allNews .wjs_newsTitle ul li a:hover,
+.wjs_allNews .wjs_newsTitle ul li a:focus {
+  text-decoration: none;
+  background-color: red;
+}
+.wjs_allNews .wjs_newsTitle ul li a span {
+  display: block;
+  text-align: center;
+  font-size: 50px;
+  line-height: 70px;
+  z-index: 2;
+}
+.wjs_allNews .wjs_newsContent ul li {
+  border: 1px solid #8f7ab7;
+  padding: 10px;
+}
+.wjs_footer {
+  border-top: 1px solid #ccc;
+  padding: 50px;
+}
+.wjs_footer .wjs_weAre {
+  text-align: center;
+  font-size: 30px;
+}
+.wjs_footer .wjs_links {
+  padding-left: 50px;
+}
+.wjs_footer .wjs_links a {
+  font-size: 70px;
+  color: #777777;
+  margin-right: 40px;
+}

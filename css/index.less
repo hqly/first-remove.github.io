@@ -1,0 +1,389 @@
+@import "wjsfont.less";
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.clearfix::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.wjs_color{
+    color: #d9534f;
+}
+.wjs_view{}
+//  <!--顶部-->
+.wjs_header{
+    .container-fluid{
+        .row{
+            div{
+                text-align: center;
+                font-size: 14px;
+                // padding: 10px;
+                height: 45px;
+                line-height: 45px;
+                border-bottom: 1px solid #000;
+                border-left: 1px solid #000;
+                a{
+                    color: #808080;
+                    position: relative;
+                    img{
+                        position: absolute;
+                        top: 20px;
+                        left: 0;
+                        display: none;
+                        z-index: 1;
+                    }
+                    &:hover{
+                        img{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+        // <!--头部导航栏-->
+.wjs_nav{
+    .row{
+        .navbar-default{
+            margin-bottom: 0;
+           .navbar-header{
+                 padding: 10px;
+            .navbar-brand{
+            padding: 0px 35px;
+            font-size: 60px;
+            span{
+                color:red;
+            }
+            .wjsfont-name{
+                color: #777777;
+            }
+        }
+
+    }
+    .navbar-collapse{
+        padding-top: 15px;
+       .navbar-nav{
+           height: 60px;
+           line-height: 60px;
+       }
+    }
+     .collapse{
+            .navbar-nav{
+                >li{
+                    a{
+                       padding-bottom: 23px;
+                       &:hover,&:focus{
+                           border-bottom:2px solid red;
+                        }
+                    }
+                }
+            }
+        }
+        }
+    }
+
+}
+
+
+
+        // <!--轮播图-->
+.wjs_Photo{
+    .carousel{
+        .carousel-inner{
+           .item{
+               img{
+                   width: 100%;
+               }
+           }
+        }
+    }
+}
+
+
+
+        // <!--支付保障-->
+.wjs_mark{
+    .container-fluid{
+       .row{
+         .media{
+           .media-body{
+               padding: 30px 50px;
+               >a{
+                   margin-top: 30px;
+                    display: block;
+                   color: #808080;
+                   >span{
+                       display: block;
+                       height: 100%;
+                       float: left;
+                       font-size: 40px;
+                   }
+                   >div{
+                        >h4{}
+                        >p{}
+                   }
+                   &:hover{
+                       color: red;
+                   }
+               }
+           }
+         }
+       }
+    }
+}
+
+
+
+        // <!--正在排队-->
+.wjs_waiting{
+    margin-top:0px;
+    padding: 30px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    .container-fluid{
+        .row{
+            p{
+                a{
+                    color: red;
+                    border-bottom: 1px dashed red;
+                }
+                span:nth-last-child(1){
+                    float: right;
+                }
+            }
+
+        }
+    }
+}
+
+
+
+
+        // <!--新手体验-->
+.wjs_newpepor{
+    .container-fluid{
+        .row{
+           .tab-content{
+               padding: 20px;
+              .card{
+                    padding: 20px;
+                .card_box{
+                    border: 1px solid #ccc;
+                    padding-right: 80px;
+                    position: relative;
+                    color: #808080;
+                    background-color: #f7f7f7;
+                    .card_left{
+                        position: relative;
+                         padding: 20px 10px;
+                         border-right:1px dashed #000;
+                    span{
+                        font-size: 40px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        background-color:red;
+                        color:#fff;
+                    }
+                    h4{
+                        text-align: center;
+                    }
+                    .card_content{
+
+                        position: relative;
+                        width:100%;
+                        .c_content_l{
+                            width: 50%;
+
+                        }
+                        .c_content_r{
+                            width: 50%;
+                            float: right;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            text-align: right;
+                        }
+                    }
+                }
+                .card_right{
+                    width: 80px;
+                    float: right;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    padding-top: 60px;
+                    height: 100%;
+                    p{
+                        text-align: center;
+                    }
+                    &:before{
+                        content: "";
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: white;
+                        // border: 1px solid #ccc;
+                        position: absolute;
+                        top: -10px;
+                        left: -10px;
+                    }
+                     &:after{
+                        content: "";
+                        display: block;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: white;
+                        // border: 1px solid #ccc;
+                        position: absolute;
+                        bottom: -10px;
+                        left: -10px;
+                        }
+                    }
+                    }
+                 &:nth-child(2),&:nth-child(4){
+                 .card_box{
+                     background-color: red;
+                     color:#fff;
+                     .card_left{
+                            border-right-color: #fff;
+                        }
+                 }
+                }
+                &:nth-child(3){
+                    .card_box{
+                        .card_right{
+                            >p{
+                                span{
+                                    border:1px solid red;
+                                    color:red;
+                                    &:nth-child(2){
+                                        border:1px solid green;
+                                        color: green;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+               }
+
+              }
+
+           }
+        }
+}
+
+
+
+        // <!--全部新闻-->
+.wjs_allNews{
+            // <!--新闻头-->
+    .wjs_allnew{
+
+        h4{
+            font-size: 30px;
+             border-bottom: 1px solid #000;
+            position: relative;
+        &::after{
+            content: "";
+            display: block;
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+            background-color: #fff;
+            border: 1px solid #000;
+            border-radius: 50%;
+        }
+        }
+    }
+            // <!--新闻标题-->
+    .wjs_newsTitle{
+        position: relative;
+        .line{
+            height: 80%;
+            border: 1px dashed #000;
+            position: absolute;
+            right: 57%;
+            top:30px;
+        }
+        ul{
+            width: 100%;
+            li{
+                margin: 0 auto;
+                margin-top: 30px;
+                a{
+                    margin: 0 auto;
+                    display: block;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    color:#fff ;
+                    background-color: #808080;
+                    &:hover,&:focus{
+                        text-decoration: none;
+                        background-color: red;
+                    }
+                    span{
+                        display: block;
+                        text-align: center;
+                        font-size: 50px;
+                        line-height: 70px;
+                        z-index: 2;
+                    }
+                }
+            }
+        }
+    }
+            // <!--新闻内容-->
+    .wjs_newsContent{
+        ul{
+            li{
+                border: 1px solid #8f7ab7;
+                padding: 10px;
+            }
+        }
+    }
+
+}
+
+
+
+        // <!--底部-->
+.wjs_footer{
+    border-top:1px solid #ccc;
+    padding: 50px;
+            //  <!--关于我们-->
+   .wjs_weAre{
+       text-align: center;
+       font-size: 30px;
+   }
+            // 合作单位
+   .wjs_links{
+       padding-left: 50px;
+       a{
+           font-size: 70px;
+           color: #777777;
+           margin-right: 40px;
+       }
+   }
+}
+
